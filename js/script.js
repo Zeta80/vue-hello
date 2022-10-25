@@ -27,7 +27,9 @@ createApp({
                 this.greetingMessage = `Ciao ${this.userName} ${this.userLastName}!`
                 this.image = this.imageOhItsYou
             }
-
+            this.userName = ""
+            this.userLastName = ""
+            this.userNickName = ""
         }
     }
 
