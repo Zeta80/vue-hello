@@ -32,3 +32,4 @@ createApp({
     }
 
 }).mount("#app");
+// VUESASSONE ヽ(✿ﾟ▽ﾟ)ノ 🗿
