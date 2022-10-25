@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- SCRIPT VUE -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- MY SCRIPT -->
+    <script defer src="js/script.js"></script>
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Questa è l'app che ti saluta</h1>
+        <label for="user-name">Inserisci il tuo nome</label>
+        <input @keyup.enter="greet" type="text" id="user-name" v-model="userName">
+        <br>
+        <label for="user-lastname">Inserisci il tuo cognome</label>
+        <input @keyup.enter="greet" type="text" id="user-lastname" v-model="userLastName">
+        <br>
+        <label for="user-nickname">dimmi il tuo nickname</label>
+        <input @keyup.enter="greet" type="text" id="user-nickname" v-model="userNickName">
+        <br>
+        <button @click="greet">Saluta</button>
+        <h2>{{ greetingMessage }}</h2>
+
+    </div>
+
+</body>
+
+</html>
