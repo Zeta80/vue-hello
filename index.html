@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <div id="app">
-        <h1>Questa è l'app che ti saluta</h1>
+    <div class="wrapper" id="app">
+        <h1>Fatti Riconoscere!</h1>
         <label for="user-name">Inserisci il tuo nome</label>
         <input @keyup.enter="greet" type="text" id="user-name" v-model="userName">
         <br>
@@ -28,6 +28,10 @@
         <br>
         <button @click="greet">Saluta</button>
         <h2>{{ greetingMessage }}</h2>
+        <div class="image-wrapper">
+            <img :src="image" alt="">
+
+        </div>
 
     </div>
 

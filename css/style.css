@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.image-wrapper {
+    width: 500px;
+    margin: auto;
+}
